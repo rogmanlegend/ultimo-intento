@@ -4,3 +4,9 @@ brayan-añadio-
 hello word
 david añadio
 al fin entre
+Pasos para integrar github en netbeans
+Si ya tenemos iniciado algún proyecto en Netbeans y queremos comenzar a versionarlo con Git, simplemente hacemos clic derecho sobre nuestro proyecto (En el explorador de proyectos), a continuación hacemos clic en Versioning – – > Inicialize Git Respository.
+
+Inicializar git en proyecto existente
+Luego de esto Netbeans nos pedirá que seleccionemos un directorio para el repositorio, por default nos pondrá el directorio en el que se almacena nuestro proyecto, preferentemente utilizaremos este directorio.
+Listo, ahora nuestro proyecto sera versionado por Git aprovechando las herramientas de análisis de versiones que Netbeans provee.
