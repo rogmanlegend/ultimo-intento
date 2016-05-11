@@ -10,3 +10,4 @@ Si ya tenemos iniciado algún proyecto en Netbeans y queremos comenzar a version
 Inicializar git en proyecto existente
 Luego de esto Netbeans nos pedirá que seleccionemos un directorio para el repositorio, por default nos pondrá el directorio en el que se almacena nuestro proyecto, preferentemente utilizaremos este directorio.
 Listo, ahora nuestro proyecto sera versionado por Git aprovechando las herramientas de análisis de versiones que Netbeans provee.
+mayonesa  yo soy tu padre
