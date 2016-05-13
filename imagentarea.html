@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "assets/js/jquery/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function(){
+                var radios = $( 'input[name="r2"]' );
+                alert(radios.val());
+                
+            });
+            function imagen()
+            {
+                var img = document.getElementById("img");
+                 var img = document.getElementById("img");
+                if(img.value != img1.valu)
+                {
+                    radio.disabled = true;
+                }
+                else
+                {
+                    radio.disabled = false;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h2>tarea</h2>
+        <table>
+            <tr><td>ver imagen <input class="img" type="radio" name="r2" value="n" /></td></tr> 
+            <tr><td>no ver imagen<input class="img" type="radio" name="r2" value="m"/></td></tr>
+            <div>
+                <img src="imagen/cancha.jpg"/>
+            </div>
+            
+        </table>
+    </body>
+</html>
