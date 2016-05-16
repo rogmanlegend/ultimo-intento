@@ -6,37 +6,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src = "assets/js/jquery/jquery-1.12.3.min.js"></script>
+        <script src = "assets/js/main.js"></script>
         <script type="text/javascript" >
-            $(document).ready(function(){
-                var radios = $( 'input[name="r2"]' );
-                alert(radios.val());
-                
-            });
-            function imagen()
-            {
-                var img = document.getElementById("img");
-                 var img = document.getElementById("img");
-                if(img.value != img1.valu)
-                {
-                    radio.disabled = true;
-                }
-                else
-                {
-                    radio.disabled = false;
-                }
-            }
-            
         </script>
     </head>
     <body>
         <h2>tarea</h2>
-        <table>
-            <tr><td>ver imagen <input class="img" type="radio" name="r2" value="n" /></td></tr> 
-            <tr><td>no ver imagen<input class="img" type="radio" name="r2" value="m"/></td></tr>
+            ver imagen <input class="img" type="radio" name="r2" value="n" />
+            no ver imagen<input class="img" type="radio" name="r2" value="m"/>
             <div>
                 <img src="imagen/cancha.jpg"/>
             </div>
             
+            <br/><br/> <br/><br/>
+       <form id="persona">
+          <table>
+            <tr><td>ci :<input  type="text" id="ci"  /></td>
+                <td>expedido</td>
+                <td><select>
+                <option>cochabamba</option>
+                <option>la paz</option>
+                <option>oruro</option>
+                <option>potosi</option>
+                <option>sucre</option>
+                <option>pando</option>
+                <option>santa cruz</option>
+                <option></option>
+            </select>
+                    </td>
+            </tr>
+            <tr><td>nombre :<input  type="text" id="nombre"  /></td></tr> 
+            <tr><td>apellidoP:<input  type="text" id="apellidoP"  /></td></tr> 
+            <tr><td>apellidoM:<input  type="text" id="apellidoM"  /></td></tr> 
+            <tr><td>email:<input  type="text" id="email"  /></td></tr> 
+            <tr><td>tel.cel<input  type="text" id="tel"  /></td></tr> 
+            <tr><td> <input type="reset" value="limpiar" /><input type="submit" value="crear" /></td></tr>
+            <tr><td>nombre: <span id="s_nombre"></span></td><td>ci:</td><span id="s_ci"></span></tr>
+                <tr><td>apellidoP:<span id="s_apellido"></span></td><td>apellidoM:<span id="s_apellidom"></span></td></tr>
+                 <tr><td>email<span id="s_email"></span>:</td></tr>
+                 <tr><td>telf.cel:<span id="s_tel"></span></td></tr>
+
         </table>
+           
+       </form>
+        
     </body>
 </html>
