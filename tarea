@@ -1,0 +1,38 @@
+<html>
+	<head>
+    	<script src="assets/js/jquery/jquery.js"></script>
+       	<script src="assets/js/main.js"></script>
+    </head>
+    <body>
+    mostrar todos los datos
+    <form id="f_crear_per">
+<p>CI:<input type="text" name="ci">
+<p>EXP:<select name="exp:">
+<option value="cbba">Cochabamba</option>
+<option value="Sucre">Sucre</option>
+<option value="europa">Tarija</option>
+<option value="oceania">Oruro</option>
+<option value="africa">Potosi</option>
+<option value="africa">La Paz</option>
+<option value="africa">Santa Cruz</option>
+<option value="africa">Pando</option>
+<option value="africa">Beni</option></p></p>
+</select> 
+
+
+
+<p>NOMBRE     :<input type="text" id="nombre"></p>
+<p>APELLIDO P.:<input type="text" id="apellidoP"></p>
+<p>APELLIDO M.:<input type="text" id="apellidoM"></p>
+<p>EMAIL      :<input type="text" id="email"></p>
+<p>TEL.CEL    :<input type="text" id="tel"></p>
+<input type="reset" value="LIMPIAR">
+<input type="submit" value="crear">
+</form>
+<p>nombre: <span id="s_nombres"></span></p>
+<p>apellidop: <span id="s_apellidom"></span></p>
+<p>apellidom: <span id="apellidop"></span></p>
+<p>email: <span id="s_email"></span></p>
+<p>telcel: <span id="s_telcel"></span></p>
+    </body>
+</html>
