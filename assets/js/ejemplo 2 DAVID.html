@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Funciones jQuery con parámetros</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <p class="navbar-text navbar-left nombre-plugin">Funciones jQuery con parámetros</p>
+          <p class="navbar-text navbar-left link-post"><a href="http://blog.endeos.com/funcion-jquery-con-parametros-ejemplos-basicos" class="navbar-link"></a></p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+			<h2>Función con 1 parámetro - Saludo</h2>
+	  		<form>
+				<div class="form-group">
+					<label for="entrada">Introduce un nombre</label>
+					<input type="text" name="entrada" id="entrada" class="form-control"/>
+				</div>
+  			</form>
+			
+			<button id="saluda" class="btn btn-default">Saludar</button>		  
+        </div>
+		
+		<div class="col-xs-6">
+			<h2>Función con 2 parámetros - Suma</h2>
+	  		<form>
+				<div class="form-group">
+					<label for="valorA">Introduce primer valor</label>
+					<input type="text" name="valorA" id="valorA" class="form-control"/>
+					<label for="valorb">Introduce segundo</label>
+					<input type="text" name="valorB" id="valorB" class="form-control"/>
+					
+				</div>
+  			</form>
+			
+			<button id="calcula" class="btn btn-default">Calcular</button>		  
+        </div>
+      </div>
+    </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+		
+			//FUNCIÓN DE SALUDO
+			function saludo(persona){     			 //Creamos la función 'saludo' con un parámetro a recibir de tipo string
+				alert('Hola '+ persona);  			 //Mostramos el mensaje con el que saludamos y le añadimos el nombre que hemos obtenido 
+			}
+			
+			jQuery('#saluda').click(function(){   	  //Al clicar sobre el botón de saludar ejecutamos la función
+				var nombre = jQuery('#entrada').val();//Cogemos el valor que hemos escrito en su campo correspondiente	
+				saludo(nombre);					      //Llamamos la función 'saludo' pasándole la variable que hemos capturado 
+			});
+	
+	
+			//FUNCIÓN DE SUMA
+			function operacion(a,b){								//Creamos la función que recoje los dos parámetros
+				var resultado=a+b;									//Sumamos los valores
+				alert('La suma de '+ a +' más '+b+' es igual a ' +resultado); //Mostramos el mensaje de con el resultado
+			}
+			
+			jQuery('#calcula').click(function(){					   //Al clicar sobre el botón ejecutamos la función
+					var num1 = parseInt(jQuery('#valorA').val(),10); //Recogemos el primer valor en formato número
+					var num2 = parseInt(jQuery('#valorB').val(),10); //Recogemos el segundo valor en formato número
+					operacion(num1,num2);						   //Llamamos a la función 'operacion' pasándole los dos valores recogidos
+			});
+	
+		});		
+	</script>
+  </body>
+</html>
