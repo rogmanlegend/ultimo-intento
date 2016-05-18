@@ -9,6 +9,18 @@
         <script src = "assets/js/main.js"></script>
         <script type="text/javascript" >
         </script>
+        <style> p {background: yellow; } </style>
+           <style>  p {  background: yellow;} </style>
+            <style>  div {       position: absolute;
+                                        background-color: #abc;
+                                        left: 0px;
+                                        top: 30px;
+                                        width: 60px;
+                                        height: 60px;
+                                        margin: 5px;
+                                      }
+            </style>
+        
     </head>
     <body>
         <h2>tarea</h2>
@@ -41,14 +53,115 @@
             <tr><td>email:<input  type="text" id="email"  /></td></tr> 
             <tr><td>tel.cel<input  type="text" id="tel"  /></td></tr> 
             <tr><td> <input type="reset" value="limpiar" /><input type="submit" value="crear" /></td></tr>
-            <tr><td>nombre: <span id="s_nombre"></span></td><td>ci:</td><span id="s_ci"></span></tr>
+            <tr><td>nombre: <span id="s_nombre"></span></td><td>ci:<span id="s_ci"></span></td></tr>
                 <tr><td>apellidoP:<span id="s_apellido"></span></td><td>apellidoM:<span id="s_apellidom"></span></td></tr>
                  <tr><td>email<span id="s_email"></span>:</td></tr>
                  <tr><td>telf.cel:<span id="s_tel"></span></td></tr>
-
+                 
+                 
+                 
         </table>
            
        </form>
-        
+            <table>
+                 <tr><td>ejemplo de jquery .apent  </td></tr> 
+                                            
+                                 <p>todos nececitamso un : </p>
+
+                                <script>
+                                $( "p" ).append( document.createTextNode( "Holaa" ) );
+                                </script>
+ 
+                    <tr><td>ejemplo de queque </td></tr> 
+                                
+                                        <meta charset="utf-8">
+                                                      <title>queue demo</title>
+                                                                                  <style>
+                                                                                  div {
+                                                                                    margin: 3px;
+                                                                                    width: 40px;
+                                                                                    height: 40px;
+                                                                                    position: absolute;
+                                                                                    left: 0px;
+                                                                                    top: 60px;
+                                                                                    background: green;
+                                                                                    display: none;
+                                                                                  }
+                                                                                  div.newcolor {
+                                                                                    background: blue;
+                                                                                  }
+                                                                                  p {
+                                                                                    color: red;
+                                                                                  }
+                                                                                  </style>
+                                                
+                                                    <p>te quedaa : <span></span></p>
+                                                            <script>
+                                                                        var div = $( "div" );
+
+                                                                                function runIt() {
+                                                                                  div
+                                                                                    .show( "slow" )
+                                                                                    .animate({ left: "+=200" }, 2000 )
+                                                                                    .slideToggle( 1000 )
+                                                                                    .slideToggle( "fast" )
+                                                                                    .animate({ left: "-=200" }, 1500 )
+                                                                                    .hide( "slow" )
+                                                                                    .show( 1200 )
+                                                                                    .slideUp( "normal", runIt );
+                                                                                }
+
+                                                                                function showIt() {
+                                                                                  var n = div.queue( "fx" );
+                                                                                  $( "span" ).text( n.length );
+                                                                                  setTimeout( showIt, 100 );
+                                                                                }
+
+                                                                                runIt();
+                                                                                showIt();
+                                                                </script>
+
+                    <tr><td>ejemplo de ,show</td></tr> 
+                                     
+                           
+                                    <button>cm estas??</button>
+                                    <p style="display: none">bien :)</p>
+
+                                    <script>
+                                    $( "button" ).click(function() {
+                                      $( "p" ).show( "slow" );
+                                    });
+                                    </script>
+                                                   
+                        <tr><td>ejemplo de stop </td></tr>             
+
+                                    <button id="go">IR</button>
+                                    <button id="stop">ALTO!</button>
+                                    <button id="back">ATRAS</button>
+                                    <div class="block"></div>
+
+                                    <script>
+                                    // Start animation
+                                    $( "#go" ).click(function() {
+                                      $( ".block" ).animate({ left: "+=100px" }, 2000 );
+                                    });
+
+                                    // Stop animation when button is clicked
+                                    $( "#stop" ).click(function() {
+                                      $( ".block" ).stop();
+                                    });
+
+                                    // Start animation in the opposite direction
+                                    $( "#back" ).click(function() {
+                                      $( ".block" ).animate({ left: "-=100px" }, 2000 );
+                                    });
+                                    </script>                           
+
+                                
+                                                    
+                                                    
+                  </table>                                  
     </body>
+    
+    
 </html>
