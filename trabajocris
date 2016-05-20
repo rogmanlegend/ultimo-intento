@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="../assets/js/jquery/jquery-1.12.3.min.js"></script>
+        <script src="../assets/js/funcionCopiar.js"></script>
+        <script type="text/javascript" >
+        </script>
+    </head>
+    <body>
+        <div>AÑADIR PRODUCTO</div>
+       <TABLE BORDER class="tablaPro" id="t_productos">
+	<TR>
+		<TH>nombre</TH>
+		<TH>cantidad</TH>
+		<TH>precio</TH>
+                            <TH>total</TH>
+                            <TH>accion</TH>
+	</TR>
+	<TR>
+                             <TD><input type="text" value="PANES"> </TD>
+                            <TD><input type="number" value="1"> </TD>
+                             <TD><input type="number" value="2"> </TD>
+                             <TD><input type="number" value="7">  </TD>
+                             <TD><a href="#" onclick="copiarFila(this);" >copiar </a> </TD>
+	    	
+	</TR>
+                
+        </TABLE>
+
+    </body>
+</html>
