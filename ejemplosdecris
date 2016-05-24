@@ -1,0 +1,166 @@
+<body>
+
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+  <li><a href="indice.html">Página principal</a>
+  <li><a href="meditaciones.html">Meditaciones</a>
+  <li><a href="ciudad.html">Mi ciudad</a>
+  <li><a href="enlaces.html">Enlaces</a>
+</ul>
+</body>
+
+color del cuerpo 
+
+body { color: purple }
+body { background-color: #d8da3d }
+
+tipo  de letraa 
+
+<title>Mi primera página con estilo</title>
+  <style type="text/css">
+  body {
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: purple;
+    background-color: #d8da3d }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  </style>
+</head>
+
+
+posicion 
+
+
+<head>
+  <title>Mi primera página con estilo</title>
+  <style type="text/css">
+  body {
+    padding-left: 11em;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: purple;
+    background-color: #d8da3d }
+  ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  </style>
+</head>
+
+
+tipos de texto
+
+<P><b>negrita</b>,
+<i>itálica</i>, <b><i>negrita itálica</i></b>, <tt>texto de teletipo</tt>, y texto
+<big>grande</big> y <small>pequeño</small>
+
+ejemplo java scrip
+
+<script type="text/javascript">
+function mostrarMensaje1() { 
+var nombre, edad;
+nombre = prompt ('Por favor introduce tu nombre:');
+if (nombre =="") { alert ('No has introducido ningún nombre'); }
+else { alert ('Hola '+nombre + '. Bienvenido a esta página web.'); }
+edad = prompt ('¿Cuál es tu edad?');
+edad = Number(edad);
+if (edad >3 && edad < 10) {alert ('Eres un niño.');}
+else if (edad>=10 && edad <18) {alert ('Eres un jovencito.');}
+else if (edad >=18 && edad < 90) {alert ('Eres mayor de edad.');}
+else if (edad >=90) { alert ('Tienes muchos años encima...');}
+else {alert ('No has introducido un valor válido de edad ( '+edad+')');}
+}
+</script>
+
+ejemplo java scrip
+selecciondel cuadro de texto 
+
+  <html>
+    <head>
+    <script type="text/javascript">
+    function setfocus()
+    {
+            document.forms[0].txt.select();
+            document.forms[0].txt.focus();
+    }
+    </script>
+    </head>
+    
+    <body>
+    <form>
+    <input type="text" name="txt" size="30" value="¡Hola mundo!"> 
+    <input type="button" value="Selecciona texto" onclick="setfocus()"> 
+    </form>
+    </body>
+    </html>
+
+bostrap ejmp1
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox" id="cb1" value="option1"> Avila
+  </label>
+  <label>
+    <input type="checkbox" id="cb2" value="option2"> Salamanca
+  </label>
+  <label>
+    <input type="checkbox" id="cb3" value="option3"> Zamora
+  </label>
+</div>
+
+boostrap ejm2
+
+<div class="checkbox">
+  <label class="checkbox-inline">
+    <input type="checkbox" id="cb1" value="option1"> Avila
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" id="cb2" value="option2"> Salamanca
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" id="cb3" value="option3"> Zamora
+  </label>
+</div>
+
+boostrap ejm3
+
+<div class="form-group">
+  <label for="nombre">Nombre:</label>
+  <input class="form-control" id="nombre" type="text" name="nombre"/>
+</div>
+<div class="form-group">
+  <label for="email">Email:</label>
+  <input class="form-control"  id="email" type="text" name="email"/>
+</div>
+div class="form-group">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Recordar datos
+    </label>
+  </div>
+</div>
+<div class="form-group">
+  <button type="submit" class="btn btn-default">Enviar</button>
+</div>
+
+bostrap ej 4
+
+
+<form>
+  <label for="nombre">Nombre:</label>
+  <input class="form-control" id="nombre" type="text" name="nombre"/>
+ 
+  <label for="email">Email:</label>
+  <input class="form-control"  id="email" type="text" name="email"/>
+ 
+  <label>
+    <input type="checkbox"> Recordar datos
+  </label>
+  <button type="submit">Enviar</button>
+</form>
