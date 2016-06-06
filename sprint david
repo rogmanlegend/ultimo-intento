@@ -14,4 +14,16 @@ SEGUNDO SPRINT	Almacenar toda la información 	pucumani	5
 	Asignación de tareas Al Personal	bellido	4										
 	proporciona resultados exactos y confiables	zenteno	4										
 	Controla los reportes e informes de gestión  	pucumani	4										
-		Total Horas											
+		Total Horas					
+		
+TERCER SPRINT registra al  animal  	zenteno										
+	regsitra datos del animal  	zenteno	 4 										
+	registrar razgos caracteristicos zenteno	  4										
+	relizar el registro nuevo del animal zenteno	  4
+	condicion de animales ya registrados zenteno	 4
+	
+CUARTO SPRINT reserva consulta 	zenteno									
+	registrar consulta	zenteno		5										
+        condicion si hay  espacio disponible en las consultas zenteno	 5										
+	reserva de consulta  zenteno	4										
+	
